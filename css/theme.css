@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*---------------------------------------------
+                    DOM General
+---------------------------------------------*/
+
+body {
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+
+}
+
+a:link {
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(230, 230, 230);    
+}
+a:visited {
+    text-decoration: none;
+    color: rgb(230, 230, 230);  
+}
+a:hover {
+    transition-duration: 500ms;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;   
+}
+
+p {
+    font-size: larger;
+}
+
+.container {
+    display: flex;  
+    flex-direction: column; 
+
+    /*position: relative;*/
+}
+
+#float {
+    height: 100vh;
+    background-image: url("../img/cape-town-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+
+}
+
+#myStory {
+    background-color: rgb(255, 242, 200);
+    
+}
+
+#skill {
+
+    background-color: rgb(255, 242, 200);
+    padding-bottom: 3%;
+    padding-top: 1vh;
+    
+}
+
+#contact {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 63, 80);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.outer {
+
+    display: flex;
+    background-color: rgb(51, 63, 80);
+    color: whitesmoke;
+    font-size: larger;
+
+
+}
+
+.a {
+    background-color: rgb(51, 63, 80);
+    color: rgb(51, 63, 80);
+}
+
+/*---------------------------------------------
+                    Top float
+---------------------------------------------*/
+
+.float-box1 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+
+    padding-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex: 2;
+
+}
+.float-box2 {
+    flex: 1;
+    padding-top: 12%;  
+
+}
+
+.float-btn {
+
+    font-family:'Consolas', sans-serif;
+    font-size: larger;
+
+
+    color: white;
+    background-color: transparent;
+    border-style: dashed;
+
+}
+.float-btn:hover {
+    transition-duration: 500ms;
+    background-color: white;
+    color: black;
+    border-style: solid;
+
+}
+
+/*---------------------------------------------
+                    Navigation
+---------------------------------------------*/
+
+.nav {
+    display: flex;
+
+    position: sticky;
+    top: 0;
+
+    background-color: rgb(34, 42, 53);
+
+    justify-content: space-around;
+
+}
+
+.nav > a {
+    font-size: larger;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+/*
+.nav > button:hover {
+
+    transition-duration: 300ms;
+    color: black;
+    background-color: whitesmoke;
+
+}
+*/
+/*---------------------------------------------
+                    Body General
+---------------------------------------------*/
+
+.tab-header {
+    text-align: center;
+}
+
+.tab {
+    padding: 0% 3% 1% 3%;
+}
+
+.content {
+    display: flex;
+}
+
+/*---------------------------------------------
+                    Projects
+---------------------------------------------*/
+
+.project-content {
+    flex-direction: column;
+    /*align-items: center;*/
+
+}
+
+.project-carousel {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 10%;
+    grid-auto-rows: minmax(auto, 350px);
+
+}
+
+.box{
+    display: none;
+
+}
+
+.activeBox {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(auto, 350px);
+
+    border-radius: 7px 7px 7px 7px;
+
+    background-color: silver;
+
+}/*
+.activeBox > div {
+
+    border-style: solid;
+    border-color: white;
+
+    background-color: silver;
+}
+*/
+.activeBox .project-carousel-previewBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.activeBox .project-carousel-detailsBox {
+
+    border-style: solid;
+    border-color: silver;
+    border-width: 7px 7px 7px 1px;
+    border-radius: 9px 11px 11px 9px;
+    padding: 1% 1% 1% 1%;
+    font-size: medium;
+
+    background-color: white;
+
+}
+
+.activeBox .project-carousel-preview {
+
+    border-radius: 7px 7px 7px 7px;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+/* -------- Buttons and Indicators --------- */
+
+.project-box4 {
+    border-radius: 7px 7px 7px 7px;
+    /*background-color: rgb(245, 245, 245);*/
+    padding-top: 20%;
+}
+
+.project-box5 {
+
+    border-radius: 7px 7px 7px 7px;
+    /*background-color: rgb(245, 245, 245);*/
+    padding-top: 20%;
+    text-align: right;
+}
+
+.project-carousel-scrollButton {
+    border-radius: 7px 7px 7px 7px;
+    height: 90%;
+
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+}
+
+.project-carousel-scrollButton:hover {
+    background-color: silver;
+}
+
+.project-indicatorBox {
+
+    display: flex;
+    height: 25px;
+    width: 115px;
+
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color:  rgb(241, 241, 241);
+    border-radius: 5px;
+
+}
+
+.project-indicator {
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    /*border-style: solid;*/
+    border-width: 1px;
+    background-color: white;
+
+}
+
+.activeIndicator {
+    background-color: silver;
+}
+
+/*---------------------------------------------
+                    Skills
+---------------------------------------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 0 2% 0 2%;
+
+    row-gap: 1em;
+    column-gap: 5%;
+
+}
+
+.grid > div {
+    border-radius: 7px;
+    font-size: larger;
+    text-align: center;
+}
+/*
+.skills .J {
+    background-color: rgb(54, 209, 100);
+}
+.skills .JS {
+    background-color: rgb(248, 233, 93);
+}
+.skills .SB {
+    background-color: rgb(54, 209, 100);
+}
+.skills .HC {
+    background-color: rgb(248, 233, 93);
+}
+.skills .G {
+    background-color: rgb(190, 190, 190);
+}
+.skills .P {
+    background-color: rgb(134, 93, 248);
+}
+.skills .SQL {
+    background-color: rgb(134, 93, 248);
+}*/
+.skillsList > div:nth-child(even) {
+    background-color: rgb(50, 90, 150);
+    background-color: rgb(34, 42, 53);
+    color: whitesmoke;
+}
+.skillsList > div:nth-child(odd) {
+    background-color: white;
+    background-color: rgb(51, 63, 80);
+    color: rgb(34, 42, 53);
+    /*color: whitesmoke;*/
+    background-color: silver;
+
+}
+
+/*---------------------------------------------
+                    My Story
+---------------------------------------------*/
+
+.story-content {
+    justify-content: space-between;
+}
+
+.story-box1 {
+    flex: 1;    
+    order: 1;
+    
+    text-align: center;
+    max-height: 50vh;
+    
+}
+.story-box1 img {
+    max-width: auto;
+    max-height: 50vh;
+}
+.story-box2 {
+    
+    padding-top: 1vh;
+    flex: 2;
+    order: 2;
+
+}
+
+/*---------------------------------------------
+                    Contact
+---------------------------------------------*/
+
+#contact > h1 {
+    margin-top: 0;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+#contact > p {
+    margin-top: 0;
+    
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+
+    font-size: large;
+    
+}
+
+.form-fields {
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    width: 45vw;
+
+    border-radius: 7px 7px 7px 7px;
+    background-color: rgb(34, 42, 53);
+}
+
+.form-fields button {
+
+    font-size: medium;
+    padding: 3px 2% 5px 2%;
+    border-style: none;
+    border-radius: 7px 7px 7px 7px;
+
+    background-color: rgb(34, 42, 53);
+    color: whitesmoke;
+
+}
+.form-fields button:hover {
+    transition-duration: 500ms;
+    color: rgb(34, 42, 53);
+    background-color: whitesmoke;
+}
+
+.form-fields fieldset {
+    display: flex;
+    border-style: none;
+    border-radius: 7px;
+    color: whitesmoke;
+}
+
+.form-fields fieldset span {
+    display: inline-block;
+    border-style: none;
+    border-radius: 7px 0 0 7px;
+    width: 40%;
+
+    color: rgb(34, 42, 53);
+    background-color: silver;
+
+}
+
+.form-fields input {
+    font-family: 'Century Gothic', sans-serif;
+    border-style: none;
+    border-radius: 0 7px 7px 0;
+    width: 60%;
+    font-size: medium;
+    background-color: white;
+    
+}
+.form-fields input:focus {
+    outline: none;
+}
+
+.form-fields textarea {
+    font-family: 'Century Gothic', sans-serif;
+    border-style: none;
+    border-radius: 0 7px 7px 0;
+    width: 60%;
+    font-size: medium;
+    background-color: white;
+}
+.form-fields textarea:focus {
+    outline: none;
+}
+
+/*--------------Contact info list-------------*/
+.form-contactInfo {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5vw;
+    padding-top: 1vh;
+    font-size: large;
+    
+}
+.sm-item {  
+
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.sm-item p { 
+    font-size: large;
+
+    margin: 0px;
+    padding: 0 2vw 0 2vw;
+
+    border-radius: 7px 7px 0 0;
+    border-style: none;
+
+    color: whitesmoke;
+    background-color: rgb(34, 42, 53);
+}
+
+.sm-itemDetails {
+    visibility: hidden;
+}
+
+.sm-item:hover > .sm-itemDetails {
+    visibility: visible;
+}
+
+.sm-itemDetails span {
+    padding: 1%;
+    position: relative;
+    left: 1vw;
+    cursor: pointer;
+    
+}
+
+.sm-itemDetails span:hover {
+    border-radius: 45%;
+    background-color: whitesmoke;
+    
+}
+
+/*
+.sm-item ul{
+    display: none;  
+
+    padding: 0px;
+    margin: 0px;
+
+    list-style: none;
+
+    color: black;
+    background-color: white;
+
+}
+
+.sm-item ul li:nth-child(even){
+    background-color: silver;
+}
+
+.sm-item:hover > ul{
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+}
+*/
+/*
+.sm-item ul:last-child:hover{
+
+    border-radius: 0 0 7px 7px;
+}
+.sm-item ul li:hover{
+    background-color: rgb(50, 90, 150);
+}
+.sm-item ul li a:hover{
+    color: whitesmoke;
+}*/
