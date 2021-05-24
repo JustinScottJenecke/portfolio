@@ -22,6 +22,7 @@
                 <button class = "float-btn" > <a href="#contact"> Contact Me </a></button> <br><br>
                 <button class = "float-btn" > <a href="https://github.com/JustinScottJenecke" target="_blank"> GitHub </a> </button> <br><br>
                 <button class = "float-btn" > <a href="https://www.linkedin.com/in/justin-scott-jenecke/" target="_blank"> LinkedIn </a> </button>
+                <!--<button class = "float-btn" > <a href="#contact"> Resume </a></button> <br><br>-->
             </div>
 
         </div>
@@ -48,7 +49,7 @@
                     </div> 
 
                     <div class="story-box2"> 
-                        <p>
+                        <!--<p>
                             Junior Full-Stack Developer, based in Cape Town South Africa, 
                             seeking oppurtunities to learn and grow. <br><br> 
                             I am currently a final year student at Cape Peninsula University of Technology, 
@@ -57,7 +58,35 @@
                             recently started exploring frontend web technologies such as JavaScript and React js,
                             and backend web technologies such as PHP, as I am looking to specialize in web development.
 
-                        </p>
+                        </p>-->
+                        <div>
+                            <button class="story-button" data-storybtn="1"> <!--story-activeButton-->
+                                <p>About me and where Im from</p>
+                            </button>
+
+                            <!--story-activeP--><p class="story-p" data-storypno="1">Junior Full-Stack Developer, based in Cape Town South Africa, 
+                            seeking oppurtunities to learn and grow.</p>
+                        </div>
+
+                        <div>
+                            <button class="story-button" data-storybtn="2">
+                                <p>What I am currently doing</p>
+                            </button>
+                            
+                            <p class="story-p" data-storypno="2">I am currently a final year student at Cape Peninsula University of Technology, 
+                            studying a Diploma in ICT: Applications Development.</p>
+                        </div>
+
+                        <div>
+                            <button class="story-button" data-storybtn="3">
+                                <p>Background and current plans</p>
+                            </button>
+
+                            <p class="story-p" data-storypno="3">My background is in backend Java programming, but I have 
+                            recently started exploring frontend web technologies such as JavaScript and React js,
+                            and backend web technologies such as PHP, as I am looking to specialize in web development.</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -70,7 +99,7 @@
                     
                     <h1>Projects</h1>   
 
-                    <p>Here some projects and applications I have built in order to showcase my programming ability</p>                    
+                    <p>Here some projects I have built in order to showcase my programming ability</p>                    
                 </div>
 
                 <div class="project-content content">
@@ -189,6 +218,8 @@
 
             <p>Contact me if you think I might be a good fit for your project or company</p>
 
+            <p>Copy my details below:</p>
+
             <div class="contact-form">
 
                 <div class="form-contactInfo">
@@ -208,19 +239,6 @@
 
                     </div>
 
-
-                    <div class="sm-item">
-                            
-                        <p>Phone</p>
-
-                        <div class="sm-itemDetails">
-                            <div>
-                                +27 74 530 0651  <span>📋</span> 
-                            </div>
-                        </div>
-
-                    </div>
-
                     <div class="sm-item">
                             
                         <p>Social Media</p>
@@ -231,6 +249,19 @@
                             </div>
                             <div>
                                 <a href="https://github.com/JustinScottJenecke" target="_blank">https://github.com/JustinScottJenecke</a>  <span>📋</span> 
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sm-item">
+                            
+                        <p>Phone</p>
+
+                        <div class="sm-itemDetails">
+                            <div>
+                                +27 74 530 0651  <span>📋</span> 
                             </div>
                         </div>
 
@@ -283,25 +314,30 @@
 
                 <div class = "form-fields">
 
-                    <form target="_blank">
+                    <p>Or send me a message:</p>
+
+                    <form action="https://formsubmit.co/215163052@mycput.ac.za" method="POST" target="_blank">
+                        
+                        <input type="hidden" name="_next" value="https://https://justinscottjenecke.github.io/portfolio/thank.html">
+
                         <fieldset>
                            <span> <label for="name">Name:</label></span>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="name" name="name" required>
                         </fieldset>
 
                         <fieldset>
                             <span><label for="email">Email:</label></span>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </fieldset>
 
                         <fieldset>
                             <span><label for="subject">Subject:</label></span>
-                            <input type="text" id="subject" name="subject">
+                            <input type="text" id="subject" name="subject" required>
                         </fieldset>
 
                         <fieldset>
                             <span> <label for="message">Message:</label> </span>
-                            <textarea></textarea>
+                            <textarea name="message" required></textarea>
                         </fieldset>
 
                         <button type="submit"> Submit </button>
@@ -315,6 +351,6 @@
 
     </body>
 
-    <script src="js/app.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
 
 </html> 
