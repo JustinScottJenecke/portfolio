@@ -40,8 +40,6 @@
         })
     })
 
-    console.log()
-
  }
 
  //======================== Contact Details =====================================//
@@ -71,7 +69,7 @@
                         detail.classList.add('sm-itemDetailsActive')
                     }
                 })
-/*
+                /*
                 storyButtons.forEach(sbtn => {
                     sbtn.classList.remove('story-activeButton')
                 })*/
@@ -81,7 +79,47 @@
         })
     })
 }
-
+/*
 export function clipCopy() {
-    
-}
+
+    const contactInfoDetailsCopy = document.querySelectorAll('.sm-itemDetails span')
+    //const aaa = document.querySelector('#clipboard-value')
+    const detailsTexts = document.querySelectorAll('.sm-itemDetails input')
+
+    contactInfoDetailsCopy.forEach(ciDetailsCopy => {
+        //console.log(ciDetailsCopy)
+        //console.log(ciDetails.previousSibling)
+        //console.log(ciDetailsCopy.previousElementSibling)
+        ciDetailsCopy.addEventListener('click', () => {
+
+            detailsTexts.forEach(detailText => {
+                //console.log(detailsText)
+                if (detailText.dataset.sid == ciDetailsCopy.dataset.did) {
+                    detailText.select();
+                    document.execCommand('copy')
+                }
+            })
+
+            
+            let detailsText = ciDetailsCopy.nextSibling
+            console.log(ciDetailsCopy.nextSibling)
+            console.log(detailsText)
+            detailsText.select()
+            document.execCommand('Copy')
+            
+
+            if (ciDetailsCopy.previousElementSibling != null) {
+
+                console.log(ciDetailsCopy.previousElementSibling.textContent)
+                const copyContent = ciDetailsCopy.previousSibling.textContent
+
+            } 
+            else if (ciDetailsCopy.previousSibling != null) {
+
+                console.log(ciDetailsCopy.previousSibling.textContent)
+                const copyContent = ciDetailsCopy.previousSibling.textContent
+
+            }
+        })
+    })
+}*/

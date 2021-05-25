@@ -498,6 +498,10 @@ p {
     background-color: rgb(34, 42, 53);
 }
 
+.sm-item p:hover { 
+    cursor: pointer;
+}
+
 .sm-itemDetails {
     visibility: hidden;  
     display: flex;

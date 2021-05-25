@@ -1,7 +1,7 @@
 
 //======================== Carousel script =====================================//
 
-import {storyParaTabs, contactInfoFunctionality} from '../js/storyScript.js';
+import {storyParaTabs, contactInfoFunctionality} from './smallScripts.js';
 
 const projectsBox = document.querySelectorAll('.box')
 const projectCarouselIndicators = document.querySelectorAll('.project-indicator')
@@ -13,8 +13,8 @@ const projects = Array.from(projectsBox)
 const indicators = Array.from(projectCarouselIndicators)
 //console.log(projects)
 
-const nextProject = document.querySelector('.project-box5')
-const previousProject = document.querySelector('.project-box4')
+const nextProject = document.querySelector('.project-box5 > .project-carousel-scrollButton')
+const previousProject = document.querySelector('.project-box4 > .project-carousel-scrollButton')
 
 //console.log(indicators)
 
@@ -72,3 +72,4 @@ nextProject.addEventListener('click', () => {
 storyParaTabs()
 
 contactInfoFunctionality();
+
