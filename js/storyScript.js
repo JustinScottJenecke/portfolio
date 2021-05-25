@@ -43,3 +43,45 @@
     console.log()
 
  }
+
+ //======================== Contact Details =====================================//
+
+ 
+ export function contactInfoFunctionality (){ 
+    const smLabels = document.querySelectorAll('.sm-item > p')
+    const smDetails = document.querySelectorAll('.sm-itemDetails')
+
+    smLabels.forEach(label => {
+        label.addEventListener('click', () => {
+
+            if (label.classList.contains('sm-itemActive')){
+
+                label.classList.remove('sm-itemActive')
+
+                smDetails.forEach(detail => {
+                    if (detail.dataset.smdetailno == label.dataset.smlabelno){
+                        detail.classList.remove('sm-itemDetailsActive')
+                    }
+                })
+
+            } else {
+
+                smDetails.forEach(detail => {
+                    if (detail.dataset.smdetailno == label.dataset.smlabelno){
+                        detail.classList.add('sm-itemDetailsActive')
+                    }
+                })
+/*
+                storyButtons.forEach(sbtn => {
+                    sbtn.classList.remove('story-activeButton')
+                })*/
+
+                label.classList.add('sm-itemActive')
+            }
+        })
+    })
+}
+
+export function clipCopy() {
+    
+}

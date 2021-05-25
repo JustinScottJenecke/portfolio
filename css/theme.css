@@ -110,15 +110,22 @@ p {
 
     color: white;
     background-color: transparent;
-    border-style: dashed;
+    border-style: none;
+    border-radius: 7px;
 
 }
 .float-btn:hover {
     transition-duration: 500ms;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
-    border-style: solid;
 
+
+}
+
+.float-btn a {
+    border: unset;
+    background-color: unset;
+    color: unset;
 }
 
 /*---------------------------------------------
@@ -217,11 +224,12 @@ p {
 }
 .activeBox .project-carousel-detailsBox {
 
+    align-items: center;
     border-style: solid;
     border-color: silver;
     border-width: 7px 7px 7px 1px;
     border-radius: 9px 11px 11px 9px;
-    padding: 1% 1% 1% 1%;
+    /*padding: 1% 1% 1% 1%;*/
     font-size: small;
 
     background-color: white;
@@ -314,28 +322,7 @@ p {
     font-size: larger;
     text-align: center;
 }
-/*
-.skills .J {
-    background-color: rgb(54, 209, 100);
-}
-.skills .JS {
-    background-color: rgb(248, 233, 93);
-}
-.skills .SB {
-    background-color: rgb(54, 209, 100);
-}
-.skills .HC {
-    background-color: rgb(248, 233, 93);
-}
-.skills .G {
-    background-color: rgb(190, 190, 190);
-}
-.skills .P {
-    background-color: rgb(134, 93, 248);
-}
-.skills .SQL {
-    background-color: rgb(134, 93, 248);
-}*/
+
 .skillsList > div:nth-child(even) {
     background-color: rgb(50, 90, 150);
     background-color: rgb(34, 42, 53);
@@ -381,39 +368,8 @@ p {
 .story-button {
 
     display: none;
-    /*padding-right: 2px;
-    padding-left: 2px;
-    padding: 0;
-    border-radius: 7px;
-    border-style: none;
-    background-color: rgb(34, 42, 53);
-    color: whitesmoke;*/
-}
-/*
-.story-button > p {
-
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 
-.story-activeButton > p{
-
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 7px;
-    border-color: rgb(34, 42, 53);
-    color: rgb(34, 42, 53);
-    background-color: whitesmoke;
-    margin: 0px;
-}
-
-.story-p {
-    display: none;
-}
-.story-activeP {
-    display: block;
-}
-*/
 /*---------------------------------------------
                     Contact
 ---------------------------------------------*/
@@ -548,7 +504,11 @@ p {
     flex-direction: column;
 }
 
-.sm-item:hover > .sm-itemDetails {
+/*.sm-item:hover > .sm-itemDetails {
+    visibility: visible;
+}*/
+
+.sm-itemDetailsActive {
     visibility: visible;
 }
 
@@ -566,46 +526,12 @@ p {
     
 }
 
-/*
-.sm-item ul{
-    display: none;  
 
-    padding: 0px;
-    margin: 0px;
 
-    list-style: none;
+/*----------------------------------------------------------------------------------------------
+                                          Media Queries
+----------------------------------------------------------------------------------------------*/
 
-    color: black;
-    background-color: white;
-
-}
-
-.sm-item ul li:nth-child(even){
-    background-color: silver;
-}
-
-.sm-item:hover > ul{
-    display: flex;
-    position: absolute;
-    width: 100%;
-
-}
-*/
-/*
-.sm-item ul:last-child:hover{
-
-    border-radius: 0 0 7px 7px;
-}
-.sm-item ul li:hover{
-    background-color: rgb(50, 90, 150);
-}
-.sm-item ul li a:hover{
-    color: whitesmoke;
-}*/
-
-/*-----------------------------------------------
-                    Media Queries
------------------------------------------------*/
 
 /*----------------900px width------------------*/
 
@@ -704,6 +630,7 @@ p {
     .project-indicatorBox {
         margin-top: 2vh;
     }
+    
 */
     .activeBox p {
         font-size: small;
@@ -714,9 +641,18 @@ p {
         flex-direction: column;
     }
 
+    .project-carousel-detailsBox {
+        align-items: center;
+    }
+
     /*---------------------------------------------
                     Contact
     ---------------------------------------------*/
+
+    .form-fields {
+        width: 65vw;
+    }
+
     .form-contactInfo {
         display: flex;
         flex-direction: column;
@@ -734,7 +670,7 @@ p {
         height: 3vh;
         width: 33vw;
 
-        border-radius: 7px 0 0 7px;
+        border-radius: 7px 7px 7px 7px;
         background-color: rgb(34, 42, 53);
         
     }
@@ -783,6 +719,10 @@ p {
         height: 50vh;
     }
 
+    #skill .skills {
+        font-size: medium;
+    }
+
     /*-------------------------------------------
                     Story
     -------------------------------------------*/
@@ -815,6 +755,7 @@ p {
     }
 
     .activeBox .project-carousel-detailsBox {
+
         font-size: x-small;
     }
 
@@ -864,4 +805,23 @@ p {
         font-size: small;
     }
 
+}
+
+/*----------------500px width------------------*/
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: large;
+    }
+
+    .nav a {
+        font-size: small;
+    }
+
+    #float {
+        height: 30vh;
+        font-size: x-small;
+
+    } 
 }
