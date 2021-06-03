@@ -376,6 +376,57 @@ p {
     display: none;
 }
 
+.story-box2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.story-button {
+
+    display: block;
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-bottom: 2%;
+
+    width: 100%;
+    border-radius: 7px;
+    border-style: none;
+
+    font-size: medium;
+    background-color: rgb(34, 42, 53);
+    color: whitesmoke;
+
+}
+.story-button > p {
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+.story-activeButton > p{
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: rgb(34, 42, 53);
+    color: rgb(34, 42, 53);
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+.story-p {
+    display: none;
+}
+.story-activeP {
+    display: block;
+}
+
+
 /*---------------------------------------------
                     Contact
 ---------------------------------------------*/
@@ -561,7 +612,7 @@ p {
         flex-direction: column;
     }
 
-    .story-box2 {
+    /*.story-box2 {
 
         display: flex;
         flex-direction: column;
@@ -604,7 +655,7 @@ p {
     .story-button p:hover > .story-p{
 
         display: block;
-    }*/
+    }
 
 
     .story-activeButton > p{
@@ -623,7 +674,7 @@ p {
     }
     .story-activeP {
         display: block;
-    }
+    }*/
 
     
     /*-------------------------------------------
@@ -817,9 +868,9 @@ p {
 
 }
 
-/*----------------500px width------------------*/
+/*----------------400px width------------------*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 
     h1 {
         font-size: large;
@@ -834,4 +885,7 @@ p {
         font-size: x-small;
 
     } 
+    .story-box1 > img {
+        height: 35vh;
+    }
 }

@@ -73,3 +73,11 @@ will be information and descriptions of the latest features and additions to the
     - removed stock photo and replaced with profile photo of myself.
 
     - another photo of higher quality will be added at a later stage.
+
+  # 03/06/21 - Added responsive style changes - 7th Commit
+
+    - added tabbed content funtionality to story section on a wide viewport
+      as I felt there was a bit too much text on display at the same time
+    
+    - added more responsive styling to the profile photo since I felt it
+      was still a bit too large when viewing the site on mobile devices
