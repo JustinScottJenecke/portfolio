@@ -1,6 +1,7 @@
 # portfolio
 repository for my current portfolio website
 
+
 The format of this readme is similar to that of a development log where updates to the file
 will be information and descriptions of the latest features and additions to the site.
 
@@ -18,7 +19,7 @@ will be information and descriptions of the latest features and additions to the
 
 # 23/05/2021 - Adding to the responsiveness and editing viewports 
 
-    - added styling for 900px for improved readibility and responsiveness
+    - added styling for 900px for improved readability and responsiveness
 
     - put story paragraphs into tabs. only displayed when active so they
       take up less space
@@ -32,12 +33,12 @@ will be information and descriptions of the latest features and additions to the
       responsive on different size screens
 
     - adjusted flex of all major containers to flex content underneath each
-      other for improved readibility on smaller devices
+      other for improved readability on smaller devices
 
 # 24/05/2021 - Finalized custom styles for respective viewports - 3rd Commit
 
     - added fixed width to social media details because div kept flexing beyond
-      desired ammount on Chrome browser
+      desired amount on Chrome browser
 
     - fixed overflow of text/links in social media details by wrapping text
 
@@ -45,10 +46,10 @@ will be information and descriptions of the latest features and additions to the
       module, when viewing website on smaller devices
         * allowed viewing of story paragraphs only while active
 
-    - made font in social media details smaller for added readibility,
+    - made font in social media details smaller for added readability,
       as font was too big and words were broken over lines
     
-    - pushed all current changes to GitHub reporitory so live site can be updated
+    - pushed all current changes to GitHub repository so live site can be updated
 
 # 25/05/21 - Added responsiveness for mobile and created tabs for contact details - 5th Commit
 
@@ -76,8 +77,11 @@ will be information and descriptions of the latest features and additions to the
 
   # 03/06/21 - Added responsive style changes - 7th Commit
 
-    - added tabbed content funtionality to story section on a wide viewport
+    - added tabbed content functionality to story section on a wide viewport
       as I felt there was a bit too much text on display at the same time
     
     - added more responsive styling to the profile photo since I felt it
       was still a bit too large when viewing the site on mobile devices
+
+    - added documentation to briefly elaborate on purpose of this project, 
+      what I have learn, color scheme, wireframe, and copy of this readme log

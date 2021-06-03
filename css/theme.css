@@ -236,6 +236,19 @@ p {
 
 }
 
+.project-carousel-detailsBox a {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    background-color: rgb(34, 42, 53);
+    color: whitesmoke;
+    color: rgb(255, 242, 200);
+}
+
+.project-carousel-detailsBox a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
 .activeBox .project-carousel-preview {
 
     border-radius: 7px 7px 7px 7px;
@@ -281,7 +294,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
 
-    background-color:  rgb(241, 241, 241);
+    background-color:  silver;
     border-radius: 5px;
 
 }
@@ -299,7 +312,7 @@ p {
 }
 
 .activeIndicator {
-    background-color: silver;
+    background-color:dimgrey;
 }
 
 /*---------------------------------------------
@@ -371,11 +384,6 @@ p {
 
 }
 
-.story-button {
-
-    display: none;
-}
-
 .story-box2 {
 
     display: flex;
@@ -401,6 +409,10 @@ p {
     color: whitesmoke;
 
 }
+.story-button:hover {
+    cursor: pointer;
+}
+
 .story-button > p {
 
     margin-top: 1px;
