@@ -351,11 +351,17 @@ p {
     
     text-align: center;
     max-height: 50vh;
+    padding-bottom: 5vh;
+
     
 }
 .story-box1 img {
     max-width: auto;
     max-height: 50vh;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgb(34, 42, 53)
+    
 }
 .story-box2 {
 

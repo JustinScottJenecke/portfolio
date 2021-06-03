@@ -67,3 +67,9 @@ will be information and descriptions of the latest features and additions to the
     - added button and link in order to view/download resume pdf document
 
     - removed copy feature from contact details due numerous overlapping bugs
+
+  # 03/06/21 - Added profile picture - 6th Commit
+
+    - removed stock photo and replaced with profile photo of myself.
+
+    - another photo of higher quality will be added at a later stage.
