@@ -85,3 +85,10 @@ will be information and descriptions of the latest features and additions to the
 
     - added documentation to briefly elaborate on purpose of this project, 
       what I have learn, color scheme, wireframe, and copy of this readme log
+  
+  # 30/06/21 - Changed preview image to gif
+
+    - since hosting a the service somewhere is not an option due to financial
+      constraints, I decided to use a gif with multiple screenshots to serve as
+      a preview as a simple pom.xml file preview does not reveal much about the
+      project
