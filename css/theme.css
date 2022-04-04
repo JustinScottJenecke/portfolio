@@ -5,6 +5,10 @@
                     DOM General
 ---------------------------------------------*/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Century Gothic', sans-serif;
@@ -336,17 +340,21 @@ p {
     text-align: center;
 }
 
+.skillsList > div {
+    padding: 1rem 0;
+}
+
 .skillsList > div:nth-child(even) {
     background-color: rgb(50, 90, 150);
-    background-color: rgb(34, 42, 53);
+    background-color: rgb(42, 61, 88);
     color: whitesmoke;
 }
 .skillsList > div:nth-child(odd) {
     background-color: white;
     background-color: rgb(51, 63, 80);
-    color: rgb(34, 42, 53);
+    color: rgb(53, 45, 34);
     /*color: whitesmoke;*/
-    background-color: silver;
+    background-color: rgb(199, 181, 142);
 
 }
 
